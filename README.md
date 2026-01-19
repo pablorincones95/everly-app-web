@@ -1,73 +1,67 @@
-# React + TypeScript + Vite
+# Everly App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Everly es una aplicación tipo diario o bitácora personal donde los usuarios pueden registrar sus pensamientos, anécdotas y experiencias personales. La aplicación permite a los usuarios expresar libremente sus ideas, emociones y recuerdos de forma privada y organizada.
 
-Currently, two official plugins are available:
+## Características principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Registro de pensamientos**: Escribe y guarda tus pensamientos diarios en un entorno privado y seguro.
+- **Anécdotas personales**: Documenta momentos importantes, historias personales y experiencias significativas.
+- **Multimedia**: Sube fotos y videos junto con tus entradas para enriquecer tus memorias.
+- **Interfaz amigable**: Diseño intuitivo y fácil de usar que facilita la escritura y navegación.
+- **Organización**: Sistema de categorización y búsqueda para encontrar rápidamente tus entradas anteriores.
 
-## React Compiler
+## Tecnología utilizada
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+Everly App está construida con tecnologías modernas de desarrollo web:
 
-## Expanding the ESLint configuration
+- React: Biblioteca de JavaScript para construir interfaces de usuario interactivas
+- TypeScript: Extensión de JavaScript que añade tipado estático
+- Tailwind CSS: Framework de utilidades CSS para diseño rápido y responsivo
+- Vite: Herramienta de construcción rápida para proyectos web modernos
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Instalación
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Para ejecutar Everly App localmente:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. Clona el repositorio:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+   ```bash
+   git clone https://github.com/pablorincones95/everly-app-web.git
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Navega al directorio del proyecto:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+   ```bash
+   cd everly-app-web
+   ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3. Instala las dependencias:
+
+   ```bash
+   npm install
+   ```
+
+4. Inicia la aplicación en modo desarrollo:
+   ```bash
+   npm run dev
+   ```
+
+La aplicación estará disponible en `http://localhost:5173`
+
+## Contribución
+
+Las contribuciones son bienvenidas. Si deseas mejorar Everly App, por favor sigue estos pasos:
+
+1. Haz un fork del proyecto
+2. Crea una rama para tu característica (`git checkout -b feature/NuevaCaracteristica`)
+3. Realiza tus cambios y haz commit (`git commit -m 'Agrega nueva característica'`)
+4. Sube tus cambios (`git push origin feature/NuevaCaracteristica`)
+5. Abre un Pull Request
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
+
+## Acerca de
+
+Everly nació con la idea de proporcionar un espacio seguro y personal donde cada individuo pueda expresarse libremente, capturando sus pensamientos y vivencias para preservarlos en el tiempo.
