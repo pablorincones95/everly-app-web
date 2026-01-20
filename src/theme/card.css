@@ -1,0 +1,10 @@
+.card-custom {
+  background-color: var(--background-card);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-normal);
+  width: 100%;
+  max-width: 400px;
+  padding: 18px 16px;
+}

@@ -1,0 +1,155 @@
+/* Variables CSS para Everly App Web */
+/* Estas variables se pueden reutilizar en cualquier parte del proyecto */
+
+:root {
+  /* Colores principales */
+  --primary-color: #4f46e5; /* Azul primario */
+  --primary-hover: #2563eb; /* Azul primario hover */
+  --secondary-color: #10b981; /* Gris secundario */
+  --secondary-hover: #475569; /* Gris secundario hover */
+  --accent-color: #8b5cf6; /* Púrpura acento */
+  --success-color: #10b981; /* Verde éxito */
+  --warning-color: #f59e0b; /* Naranja advertencia */
+  --error-color: #ef4444; /* Rojo error */
+  --info-color: #0ea5e9; /* Azul información */
+  --neutral-color: #94a3b8; /* Gris neutro */
+
+  /* Colores de fondo */
+  --background-primary: #f2f2f2; /* Fondo principal */
+  --background-secondary: #f8fafc; /* Fondo secundario */
+  --background-card: #ffffff; /* Fondo tarjetas */
+  --background-modal: rgba(0, 0, 0.5); /* Fondo modal */
+  --background-header: #f1f5f9; /* Fondo header */
+  --background-footer: #f1f5f9; /* Fondo footer */
+
+  /* Colores de texto */
+  --text-primary: #111827; /* Texto primario */
+  --text-secondary: #64748b; /* Texto secundario */
+  --text-muted: #94a3b8; /* Texto apagado */
+  --text-inverted: #ffffff; /* Texto invertido */
+  --text-link: #3b82f6; /* Texto enlaces */
+
+  /* Colores de borde */
+  --border-primary: #e2e8f0; /* Borde primario */
+  --border-secondary: #cbd5e1; /* Borde secundario */
+  --border-input: #cbd5e1; /* Borde inputs */
+  --border-table: #e2e8f0; /* Borde tablas */
+
+  /* Espaciados */
+  --spacing-xs: 0.25rem; /* 4px */
+  --spacing-sm: 0.5rem; /* 8px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 1.5rem; /* 24px */
+  --spacing-xl: 2rem; /* 32px */
+  --spacing-2xl: 3rem; /* 48px */
+  --spacing-3xl: 4rem; /* 64px */
+
+  /* Tamaños de fuente */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-lg: 1.125rem; /* 18px */
+  --font-size-xl: 1.25rem; /* 20px */
+  --font-size-2xl: 1.5rem; /* 24px */
+  --font-size-3xl: 1.875rem; /* 30px */
+  --font-size-4xl: 2.25rem; /* 36px */
+  --font-size-5xl: 3rem; /* 48px */
+  --font-size-6xl: 3.75rem; /* 60px */
+
+  /* Pesos de fuente */
+  --font-weight-light: 30;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Radios */
+  --radius-xs: 0.125rem; /* 2px */
+  --radius-sm: 0.25rem; /* 4px */
+  --radius-md: 0.375rem; /* 6px */
+  --radius-lg: 0.5rem; /* 8px */
+  --radius-xl: 0.75rem; /* 12px */
+  --radius-2xl: 1rem; /* 16px */
+  --radius-full: 9999px; /* Circular */
+
+  /* Sombras */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg:
+    0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl:
+    0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+
+  /* Transiciones */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  --transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* Alturas de línea */
+  --line-height-none: 1;
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+
+  /* Anchos máximos */
+  --max-width-xs: 20rem; /* 320px */
+  --max-width-sm: 24rem; /* 384px */
+  --max-width-md: 28rem; /* 448px */
+  --max-width-lg: 32rem; /* 512px */
+  --max-width-xl: 36rem; /* 576px */
+  --max-width-2xl: 42rem; /* 672px */
+  --max-width-3xl: 48rem; /* 768px */
+  --max-width-4xl: 56rem; /* 896px */
+  --max-width-5xl: 64rem; /* 1024px */
+  --max-width-6xl: 72rem; /* 1152px */
+  --max-width-7xl: 80rem; /* 1280px */
+
+  /* Z-index */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+}
+
+/* Tema oscuro */
+[data-theme="dark"],
+.dark {
+  /* Colores principales */
+  --primary-color: #3b82f6;
+  --primary-hover: #60a5fa;
+  --secondary-color: #64748b;
+  --secondary-hover: #94a3b8;
+  --accent-color: #a78bfa;
+  --success-color: #34d399;
+  --warning-color: #fbbf24;
+  --error-color: #f87171;
+  --info-color: #7dd3fc;
+  --neutral-color: #94a3b8;
+
+  /* Colores de fondo */
+  --background-primary: #0f172a; /* Fondo principal */
+  --background-secondary: #1e293b; /* Fondo secundario */
+  --background-card: #1e293b; /* Fondo tarjetas */
+  --background-header: #1e293b; /* Fondo header */
+  --background-footer: #1e293b; /* Fondo footer */
+
+  /* Colores de texto */
+  --text-primary: #f1f5f9; /* Texto primario */
+  --text-secondary: #cbd5e1; /* Texto secundario */
+  --text-muted: #94a3b8; /* Texto apagado */
+  --text-inverted: #0f172a; /* Texto invertido */
+  --text-link: #60a5fa; /* Texto enlaces */
+
+  /* Colores de borde */
+  --border-primary: #334155; /* Borde primario */
+  --border-secondary: #475569; /* Borde secundario */
+  --border-input: #475569; /* Borde inputs */
+  --border-table: #334155; /* Borde tablas */
+}
