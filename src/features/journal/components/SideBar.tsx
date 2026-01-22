@@ -11,7 +11,7 @@ export const SideBar = ({ isOpen }: { isOpen: boolean }) => {
             <li>
               <a
                 href="#"
-                className="block px-4 py-2 text-sm text-gray-70 hover:bg-gray-100 rounded-md"
+                className=" text-menu-item block px-4 py-2 text-sm rounded-lg"
               >
                 Dashboard
               </a>
@@ -19,7 +19,7 @@ export const SideBar = ({ isOpen }: { isOpen: boolean }) => {
             <li>
               <a
                 href="#"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md"
+                className=" text-menu-item block px-4 py-2 text-sm rounded-lg"
               >
                 Calendar
               </a>
@@ -27,7 +27,7 @@ export const SideBar = ({ isOpen }: { isOpen: boolean }) => {
             <li>
               <a
                 href="#"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md"
+                className=" text-menu-item block px-4 py-2 text-sm rounded-lg"
               >
                 Settings
               </a>
@@ -35,7 +35,7 @@ export const SideBar = ({ isOpen }: { isOpen: boolean }) => {
             <li>
               <a
                 href="#"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md"
+                className=" text-menu-item block px-4 py-2 text-sm rounded-lg"
               >
                 Profile
               </a>
