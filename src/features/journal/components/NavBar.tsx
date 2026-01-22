@@ -21,7 +21,7 @@ export const NavBar = ({ onMenuClick }: { onMenuClick: () => void }) => {
           </svg>
         </button>
         <div className="flex items-center justify-between w-full pl-2">
-          <p>Journal App</p>
+          <p className="text-color-primary font-bold">Journal App</p>
           <button className="text-red-600 hover:text-red-800">Logout</button>
         </div>
       </div>
