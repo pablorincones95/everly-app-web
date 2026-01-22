@@ -16,3 +16,15 @@
   color: var(--text-secondary);
   margin: var(--spacing-xs) 0 0;
 }
+
+.text-color-primary {
+  color: var(--primary-color);
+}
+
+.text-menu-item {
+  color: var(--primary-color);
+}
+.text-menu-item:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
