@@ -7,6 +7,44 @@
 
 body {
   background-color: var(--background-primary);
-  padding: var(--spacing-md);
   min-height: 100vh;
+}
+
+.journal-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.journal-navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: var(--background-secondary);
+  padding: 20px 16px;
+}
+
+.journal-main-content {
+  padding: 20px 16px;
+}
+
+.journal-sidebar {
+  width: 240px;
+  position: fixed;
+  left: 0;
+  top: 64px;
+  background-color: var(--background-secondary);
+  height: 100vh;
+}
+
+@media (min-width: 1280px) {
+  .journal-navbar,
+  .journal-main-content {
+    padding: 16px;
+    padding-left: 316px;
+  }
+
+  .journal-sidebar {
+    width: 300px;
+    top: 0;
+  }
 }
